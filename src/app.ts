@@ -10,6 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/api/auth', authRoute)
+app.get('/', (req, res)=> {
+  res.send('Welcome To Node Server')
+})
 
 const listner = app.listen(process.env.PORT || 8000, () => {
     //@ts-ignore
