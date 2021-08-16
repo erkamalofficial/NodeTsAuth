@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/auth', authRoute)
 
-const listner = app.listen(process.env.PORT, () => {
+const listner = app.listen(process.env.PORT || 8000, () => {
     //@ts-ignore
     console.log(`Server Running on port ${listner.address().port}.`);
   });
