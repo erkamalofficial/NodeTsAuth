@@ -5,7 +5,8 @@ import './db/Connection';
 import express from 'express';
 import cors from 'cors';
 
-import authRoute from './Routes/AuthRoute'
+import authRoute from './routes/AuthRoute';
+
 const app = express();
 
 app.use(cors());
