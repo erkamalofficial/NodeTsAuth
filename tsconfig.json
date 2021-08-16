@@ -6,7 +6,11 @@
       "rootDir": "src/",
       "target": "ES6",
       "skipLibCheck": true,
-      "strict": true
+      "strict": true,
+      "types": [ "node"],
+      "typeRoots": [
+        "./node_modules/@types"
+      ],
   },
   "include": ["**/*"],
   "exclude": ["./build"]

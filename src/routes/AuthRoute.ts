@@ -1,3 +1,4 @@
+// @ts-nocheck 
 import { User } from "../models"
 import { Router } from "express";
 const router = Router();
