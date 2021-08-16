@@ -17,6 +17,5 @@ app.get('/', (req, res)=> {
 })
 
 const listner = app.listen(process.env.PORT || 8000, () => {
-    //@ts-ignore
     console.log(`Server Running on port ${listner.address().port}.`);
   });
